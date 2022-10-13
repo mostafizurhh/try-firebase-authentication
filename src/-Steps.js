@@ -57,8 +57,22 @@ Toggle Button (SignIn & SignOut)
 --------------------------------
 19. write following >>
 {
-    user.email ? <button onClick={handleSignOut}>Sign Out</button>
+    user.uid ? <button onClick={handleSignOut}>Sign Out</button>
         :
         <button onClick={handleGoogleSignIn}>Google SginIn</button>
 }
+
+----------------------
+Add New SignIn Method
+----------------------
+20. enable the new signin method in firebase
+21. create a new app in github, fb, twitter etc's website unnder settings > applications > create new app
+22. give redirect link from firebase to new app of github, fb, twitter etc
+23. get clientId and secretId from the app and use it in firebase to save ne signIn method
+24. create a new button for github, fb, twitter etc.. like the following >> 
+<>
+<button onClick={handleGoogleSignIn}>Google SginIn</button>
+<button onClick={handleGithubSignIn}>Github SginIn</button>
+</>
+25. set click handler function exactly like google sign in
 */
