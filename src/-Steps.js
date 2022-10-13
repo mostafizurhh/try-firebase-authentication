@@ -38,4 +38,27 @@ DISPLAY USER DATA
 <h6>Email: {user.email}</h6>
 </div>
 
+---------------
+Handle Sign Out
+---------------
+18. craete a button with onclick function and create a function >> const handleSignOut = () => 
+{
+    const auth = getAuth();
+    signOut(auth).then(() => {
+      setUser({});
+    })
+      .catch((error) => {
+        setUser({});
+      });
+}
+
+--------------------------------
+Toggle Button (SignIn & SignOut)
+--------------------------------
+19. write following >>
+{
+    user.email ? <button onClick={handleSignOut}>Sign Out</button>
+        :
+        <button onClick={handleGoogleSignIn}>Google SginIn</button>
+}
 */
