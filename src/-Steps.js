@@ -8,4 +8,9 @@
 7. from terminal go to your project folder and write (npm install firebase) 
 8. Dangerious: get firebase config and put it in firebase.init.js (do not create a public project in git hub)
 9. in firebase.init.js write (export default app) as the last line.
+10. create (auth) using getAuth fromfirebase by using app from firebase.init.js >> (const auth = getAuth(app))
+11. create a google auth provider >> (const provider = new GoogleAuthProvider())
+12. go to firebase >Build > Authentication > Sign in method > Google > enable
+13. create button and onclick function to handle click operation
+
 */
