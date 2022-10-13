@@ -8,7 +8,7 @@ function App() {
   const provider = new GoogleAuthProvider();
 
   const handleGoogleSignIn = () => {
-    console.log('hello')
+    console.log('hi')
   }
   return (
     <div className="App">
