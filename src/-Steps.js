@@ -12,5 +12,5 @@
 11. create a google auth provider >> (const provider = new GoogleAuthProvider())
 12. go to firebase >Build > Authentication > Sign in method > Google > enable
 13. create button and onclick function to handle click operation
-
+14. get popup
 */
